@@ -32,7 +32,3 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist  # Adjust this to the directory that contains your build files
 
-  </div>
-</body>
-</html>
-
