@@ -1,158 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of a front-end web developer." />
   <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="icon" href="favicon.ico" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #2f2525;
-      color: #fcfcfc;
-    }
-    nav {
-      background: #ff0000;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #000;
-    }
-    .container {
-      padding: 20px;
-      text-align: center;
-    }
-    .tab {
-      display: none;
-      background: #222;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      max-width: 700px;
-      margin: 40px auto;
-    }
-    .tab.active {
-      display: block;
-    }
-    h1 {
-      color: #ff0000;
-      font-size: 2em;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    img, video {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    button {
-      background: #6a0dad;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: #d4a5ff;
-    }
-    a.project-link {
-      color: #00ff88;
-    }
-  </style>
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-    }
-  </script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <nav>
-    <a href="#" onclick="showTab('home')">Home</a>
-    <a href="#" onclick="showTab('about')">About</a>
-    <a href="#" onclick="showTab('projects')">Projects</a>
-    <a href="#" onclick="showTab('certificates')">Certificates</a>
-    <a href="#" onclick="showTab('contact')">Contact</a>
-    <a href="#" onclick="showTab('resume')">Resume</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
   </nav>
 
   <div class="container">
-    <div id="home" class="tab active">
+    <section id="home">
       <h1>Welcome to My Portfolio</h1>
       <p>Explore my work and skills.</p>
-      <img src="your-image.jpg" alt="Portfolio banner or logo" />
-    </div>
+      <img src="your-image.jpg" alt="Homepage preview" />
+    </section>
 
-    <div id="about" class="tab">
+    <section id="about">
       <h1>About Me</h1>
       <p>
         Hi! I'm a beginner front-end web developer who enjoys building creative and responsive websites.
-        My journey started in college during an Electromechanical Manufacturing Lab class I didn’t enjoy. I discovered 
-        <a href="https://www.freecodecamp.org" target="_blank" class="project-link">freeCodeCamp</a> and started learning!
+        I started my journey in college but later moved to <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> where I built:
       </p>
+      <ul>
+        <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-71" target="_blank">Cat Photo App</a></li>
+        <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-91" target="_blank">Café Menu</a></li>
+      </ul>
       <p>
-        Some fun projects I’ve built:
-        <br>• <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-71" 
-                 target="_blank" class="project-link">Cat Photo App</a><br>
-        • <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-91" 
-             target="_blank" class="project-link">Café Menu</a>
+        These projects helped me build a solid foundation in HTML and CSS.
       </p>
-      <p>
-        These helped me build a solid foundation in HTML and CSS, and I’m now working toward becoming a full-fledged front-end developer.
-      </p>
-      <img src="https://media.discordapp.net/attachments/1071241512295354479/1369685128036614405/IMG_1383.png?ex=681ebc6e&is=681d6aee&hm=e451f4b68eb4bf13cdd88e5b1c5cde2f112189348b707529574665b66fa39cd4&=&format=webp&quality=lossless&width=740&height=1606" alt="Photo of me" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;" />
+      <img src="https://media.discordapp.net/attachments/1071241512295354479/1369685128036614405/IMG_1383.png?ex=681ebc6e&is=681d6aee&hm=e451f4b68eb4bf13cdd88e5b1c5cde2f112189348b707529574665b66fa39cd4&=&format=webp&quality=lossless&width=740&height=1606" 
+           alt="Portrait photo of the developer" />
+    </section>
 
-    </div>
-
-    <div id="projects" class="tab">
+    <section id="projects">
       <h1>My Projects</h1>
       <p>A showcase of my work.</p>
-      <img src="project-image.jpg" alt="Screenshot of project" />
+      <img src="project-image.jpg" alt="Screenshot of a project" />
       <video controls>
         <source src="project-demo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </section>
 
-    <div id="certificates" class="tab">
+    <section id="certificates">
       <h1>My Certificates</h1>
       <p>Here are some of the certificates I’ve earned:</p>
-      <img src="certificate1.jpg" alt="Certificate 1" />
-      <img src="certificate2.jpg" alt="Certificate 2" />
-    </div>
+      <img src="certificate1.png" alt="Certificate from freeCodeCamp" />
+      <img src="certificate2.jpg" alt="Another web development certificate" />
+    </section>
 
-    <div id="contact" class="tab">
+    <section id="contact">
       <h1>Contact Me</h1>
       <p>Get in touch with me here.</p>
-      <img src="contact-image.jpg" alt="Contact illustration" />
+      <img src="contact-image.jpg" alt="Contact section graphic" />
       <br /><br />
       <button onclick="window.location.href='mailto:your-email@example.com'">Email Me</button>
-    </div>
+    </section>
 
-    <div id="resume" class="tab">
+    <section id="resume">
       <h1>Resume</h1>
-      <p>Here's my resume:</p>
-      <img src="assets/images/resume-img.jpg" alt="Screenshot of resume" />
+      <p>Here's my resume</p>
+      <img src="assets/images/resume-img.jpg" alt="Preview of resume document" />
       <br /><br />
-      <button onclick="window.open('https://docs.google.com/document/d/1O3HGr_Bz3lpOl4b6u-m5nZuhN2RrXvQPUI-UjIYauhY/edit?usp=sharing', '_blank')">View Resume</button>
-    </div>
+      <button onclick="window.location.href='https://docs.google.com/document/d/1O3HGr_Bz3lpOl4b6u-m5nZuhN2RrXvQPUI-UjIYauhY/edit?usp=sharing'">View Resume</button>
+    </section>
   </div>
 </body>
 </html>
+
 
