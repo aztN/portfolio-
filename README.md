@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -117,8 +116,8 @@
       <p>
         These helped me build a solid foundation in HTML and CSS, and I’m now working toward becoming a full-fledged front-end developer.
       </p>
-      <img src="https://media.discordapp.net/attachments/1071241512295354479/1369685128036614405/IMG_1383.png" 
-           alt="Photo of me" style="width: 250px; height: 250px; object-fit: cover;" />
+      <img src="https://media.discordapp.net/attachments/1071241512295354479/1369685128036614405/IMG_1383.png?ex=681ebc6e&is=681d6aee&hm=e451f4b68eb4bf13cdd88e5b1c5cde2f112189348b707529574665b66fa39cd4&=&format=webp&quality=lossless&width=740&height=1606" alt="Photo of me" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;" />
+
     </div>
 
     <div id="projects" class="tab">
